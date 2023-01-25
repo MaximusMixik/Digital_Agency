@@ -344,10 +344,10 @@ body {
 .block__title::after {
   content: "";
   position: absolute;
-  top: 50%;
-  right: -25px;
-  border-left: 8px solid transparent;
-  border-right: 8px solid transparent;
+  top: 45%;
+  right: -20px;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
   border-top: 4px solid rgb(255, 250, 250);
   transition: all 500ms ease 200ms;
 }
@@ -610,6 +610,10 @@ body {
   .intro__banner {
     padding-top: 0px;
     /* margin: 0px -260px; */
+  }
+  .intro__image img {
+    max-width: 100%;
+    margin-left: -15px;
   }
 }
 /* ======.section__online ============================================================== */
