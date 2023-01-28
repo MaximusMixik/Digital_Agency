@@ -84,9 +84,9 @@ select {
   background-color: transparent;
 }
 
-input::-ms-clear {
+/* input::-ms-clear {
   display: none;
-}
+} */
 
 button,
 input[type=submit] {
@@ -104,10 +104,10 @@ button:active {
   outline: none;
 }
 
-button::-moz-focus-inner {
+/* button::-moz-focus-inner {
   padding: 0;
   border: 0;
-}
+} */
 
 label {
   cursor: pointer;
@@ -169,28 +169,15 @@ body {
   border-radius: 60px;
   transition: all 200ms ease;
   background: linear-gradient(90deg, rgb(252, 176, 69) 0%, rgb(253, 29, 29) 50%, rgb(131, 58, 180) 100%);
-  -webkit-animation: gradient 8s ease infinite;
-          animation: gradient 8s ease infinite;
+  animation: gradient 8s ease infinite;
+
   background-size: 400%;
-}
+} 
 
 .btn:hover {
   font-weight: 700;
-  -webkit-animation-play-state: paused;
-          animation-play-state: paused;
+  animation-play-state: paused;
   background: radial-gradient(127.68% 423.02% at 31.82% -13.39%, #ff9b00 12.5%, #ed1c24 100%);
-}
-
-@-webkit-keyframes gradient {
-  0% {
-    background-position: 0 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0 50%;
-  }
 }
 
 @keyframes gradient {
@@ -213,8 +200,7 @@ body {
   height: 100%;
   top: 0;
   left: 0;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 @media (max-width: 1099.98px) {
@@ -233,10 +219,6 @@ body {
   }
 }
 /* ======main============================================================== */
-.main {
-  flex: 1 1 auto;
-}
-
 .header {
   background: #060919;
 }
@@ -309,15 +291,13 @@ body {
   border-radius: 60px;
   transition: all 400ms ease;
   background: linear-gradient(90deg, rgb(252, 176, 69) 0%, rgb(253, 29, 29) 50%, rgb(131, 58, 180) 100%);
-  -webkit-animation: gradient 6s ease infinite;
-          animation: gradient 6s ease infinite;
+  animation: gradient 6s ease infinite;
   background-size: 400%;
 }
 
 .header__burger:hover {
   font-weight: 700;
-  -webkit-animation-play-state: paused;
-          animation-play-state: paused;
+  animation-play-state: paused;
   background: radial-gradient(127.68% 423.02% at 31.82% -13.39%, #ff9b00 12.5%, #ed1c24 100%);
 }
 
@@ -535,10 +515,8 @@ body {
 
 .intro__decore img {
   width: 100vw;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
+  object-fit: cover;
+  object-position: center;
   height: 100vh;
 }
 
@@ -629,8 +607,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   padding-bottom: 135px;
-  -moz-column-gap: 20px;
-       column-gap: 20px;
+  column-gap: 20px;
   row-gap: 87px;
 }
 
@@ -761,8 +738,7 @@ body {
 @media (max-width: 767.98px) {
   .online__row {
     padding-bottom: 110px;
-    -moz-column-gap: 20px;
-         column-gap: 20px;
+    column-gap: 20px;
     row-gap: 80px;
   }
   .online__colums {
