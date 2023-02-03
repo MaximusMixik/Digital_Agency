@@ -7,12 +7,10 @@
   <title>Digital Agency</title>
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Space+Grotesk:regular,500,700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Inter:regular,600,700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <wrapper class="wrapper">
+  <div class="wrapper">
     <header class="header">
       <div class="header__container">
         <a href="#" class="header__logo"><img src="img/header/Group.svg" alt="logo"></a>
@@ -22,26 +20,28 @@
               <div class="block__one">
                 <div class="block__item">
                   <div class="menu__link block__title">Our Programs</div>
-                  <div class="block__text  ">
-                    <div class="menu__item"><a class="menu__link" href="https://tinypng.com/">Programs Our </a></div>
-                    <div class="menu__item"><a class="menu__link" href="https://tinypng.com/"> Programs</a></div>
-                    <div class="menu__item"> <a class="menu__link" href="https://tinypng.com/">Our</a>
+                  <div class="block__text ">
+                    <div class="menu__item"><a class="menu__link" target="_blank" href="/our_program/index.html"> Our
+                        Programs</a></div>
+                    <div class="menu__item"><a class="menu__link" target="_blank"
+                        href="/blog_article/blog_article.html">Blog article</a></div>
+                    <div class="menu__item"> <a class="menu__link" href="#">Our</a>
                     </div>
                   </div>
                 </div>
               </div>
             </li>
             <li class="menu__item">
-              <a href="#" class="menu__link">Awards</a>
+              <a href="#awards" class="menu__link">Awards</a>
             </li>
             <li class="menu__item">
-              <a href="#" class="menu__link">About Us</a>
+              <a href="/about_us/about.html" target="_blank" class="menu__link">About Us</a>
             </li>
             <li class="menu__item">
-              <a href="#" class="menu__link">Article</a>
+              <a href="/article/index.html" target="_blank" class="menu__link">Article</a>
             </li>
             <li class="menu__item">
-              <a href="#" class="menu__link">Contact Us</a>
+              <a href="#" target="_blank" class="menu__link">Contact Us</a>
             </li>
           </ul>
         </nav>
@@ -270,7 +270,7 @@
           </div>
         </div>
       </section>
-      <section class="section__awards">
+      <section class="section__awards " id="awards">
         <div class="awards__container">
           <div class="awards__head title">
             <h2>Awards</h2>
@@ -439,7 +439,7 @@
         </div>
       </div>
     </footer>
-  </wrapper>
+  </div>
   <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
   <script src="js/script.js"></script>
 </body>
