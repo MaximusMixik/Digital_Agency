@@ -26,10 +26,28 @@ $(document).ready(function () {
 });
 
 
+$(document).ready(function(){
+  $('.slider').slick({
+       arrows: false, 
+    dots: false,
+    slidesToShow: 3,
+     responsive: [
+      {
+        breakpoint: 900,
+        settings: {
+           slidesToShow: 2,
 
-// swiper
-const swiper = new Swiper(".swiper", {
-  direction: "horizontal",
-  loop: true,
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+           slidesToShow: 1,
 
+        }
+      }
+    ],
+    
+
+});
 });
