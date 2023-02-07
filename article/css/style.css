@@ -537,9 +537,7 @@ body {
 
 .intro__image img {
   width: 100vw;
-  -o-object-fit: cover;
   object-fit: cover;
-  -o-object-position: center;
   object-position: center;
   height: 73vh;
 }
