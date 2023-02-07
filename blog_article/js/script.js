@@ -28,16 +28,63 @@ $(document).ready(function () {
 
 
 // swiper
-const swiper = new Swiper(".swiper", {
-  direction: "horizontal",
-  loop: true,
 
-    // If we need pagination
-  pagination: {
-    el: ".swiper-pagination",
-    clicable: true,
-  },
+$(document).ready(function(){
+  $('.slider').slick({
+   
+    arrows:  false, //  false,
+    dots: true,
+    adaptiveHeight: true,  // для авторегулировки по высоте 
+    slidesToShow: 1,//количество слайдов на вывод
+    slidesToScroll: 1,//количество листаемых сладов 
+    speed: 1500,//скорость анимации, перехода
+    easing: "linear",// вид анимации
+    infinite: true,// true false имеет окончатие слайда
+    initialSlide: 0,// стартовый слайд
 
-});
+    autoplay:true, //автопролиствыание
+    autoplaySpeed:3000, //скорость автопролиствыание
+    pauseOnFocus: true,  //пауза при фокусе
+    pauseOnHover: true,   //пауза при наведении
+    pauseOnDotsHover: true,//пауза при наведении на буллеты
+
+
+    draggable:true, //отключает свайп на ПК, мышкой ничего не листнешь
+    swipe: true, //на тачскрине не свайпнет
+    touchThreshold: 5,//чувствительность срабатывания при свайпе 
+   touchMove: true, //не сможем дергать(качать) слайдер 
+    waitForAnimate: false,//переключение только при завершении анимации
+
+    centerMode: false,// первый слайд встанет по центру
+    variableWidth:false,// true пропадает ширина слайда, картинки будут всплошную ,33м
+  
+  });
+  $('.slidermini').slick({
+    arrows: false, //  false,
+    slidesToShow: 6,// количество слайдов на вывод
+    dots: false,
+    adaptiveHeight: false,
+    variableWidth: true,// true пропадает ширина слайда, картинки будут всплошную ,33м
+    centerMode: false,
+    infinite: true,
+      responsive: [// breakpoint
+     
+       {
+        breakpoint: 1000,
+        settings: {
+          slidesToShow: 5,//количество слайдов на вывод
+          slidesToScroll: 2,//количество листаемых сладов 
+        }
+        },
+         {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 5,//количество слайдов на вывод
+          slidesToScroll: 3,//количество листаемых сладов 
+        }
+        },
+    ],
+   });
+   });
 
 
